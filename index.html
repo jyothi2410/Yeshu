@@ -8,169 +8,161 @@
   <style>
     body {
       margin: 0;
-      font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
+      font-family: "Trebuchet MS", Arial, sans-serif;
       background: linear-gradient(to bottom, #ffd6e8, #fff);
       color: #444;
       text-align: center;
     }
 
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: auto;
-      padding: 40px 20px 60px;
+      padding: 44px 18px 70px;
     }
 
     h1 {
       color: #ff4d6d;
       font-size: 40px;
-      margin: 10px 0;
+      margin: 10px 0 6px;
+      letter-spacing: 0.2px;
     }
 
     h2 {
       color: #ff758f;
-      margin: 0 0 18px;
+      margin: 0 0 16px;
+      font-weight: 700;
     }
 
     .heart {
-      font-size: 48px;
-      animation: pulse 1.4s infinite;
+      font-size: 52px;
+      animation: pulse 1.35s infinite;
       margin-bottom: 8px;
     }
 
     @keyframes pulse {
       0% { transform: scale(1); }
-      50% { transform: scale(1.25); }
+      50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
 
-    .song-title {
-      font-weight: 700;
-      margin: 18px 0 10px;
-    }
-
-    .video {
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-      margin: 0 auto;
-    }
-
-    iframe {
-      width: 100%;
-      height: 315px;
-      border: 0;
-      display: block;
-    }
-
-    .note {
-      font-size: 14px;
-      color: #777;
-      margin: 10px 0 0;
-    }
-
     .card {
-      background: white;
-      padding: 24px;
+      background: #fff;
+      padding: 24px 22px;
       border-radius: 18px;
-      margin-top: 22px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+      margin: 18px auto 0;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.10);
       text-align: left;
     }
 
     p {
       font-size: 18px;
-      line-height: 1.7;
+      line-height: 1.75;
       margin: 12px 0;
     }
 
-    .signature {
-      margin-top: 14px;
+    .song-title {
+      font-weight: 800;
+      margin: 18px 0 8px;
+      text-align: center;
     }
 
-    button {
+    .song-btn {
+      display: block;
+      padding: 16px 18px;
+      background: #ff4d6d;
+      color: #fff;
+      border-radius: 18px;
+      text-decoration: none;
+      margin: 12px auto 6px;
+      max-width: 720px;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: 0 10px 18px rgba(255,77,109,0.25);
+    }
+
+    .song-btn:hover {
+      background: #e63956;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .btn {
       margin-top: 14px;
-      padding: 12px 22px;
+      padding: 13px 22px;
       font-size: 16px;
       background: #ff4d6d;
-      color: white;
+      color: #fff;
       border: none;
-      border-radius: 25px;
+      border-radius: 26px;
       cursor: pointer;
       box-shadow: 0 10px 18px rgba(255,77,109,0.25);
     }
 
-    button:hover {
+    .btn:hover {
       background: #e63956;
+    }
+
+    .signature {
+      margin-top: 16px;
     }
 
     .ps {
       font-size: 14px;
-      margin-top: 15px;
       color: #777;
+      margin-top: 14px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="heart">💗💗</div>
+  <main class="container">
+    <div class="heart" aria-hidden="true">💗💗</div>
     <h1>Hello Yeshu!</h1>
     <h2>Happy Valentine’s Day 💕</h2>
 
-    <div class="song-title">Our Telugu love song 🎶</div>
-    <p style="font-size:18px;margin:14px 0;color:#444;">
-  Nuvvu na life lo unte chaalu… migatha antha automatic ga set avuthundi 💞
-</p>
-
-<a href="https://www.youtube.com/watch?v=Zc7SeDL-0uE"
-   style="
-     display:block;
-     padding:18px 20px;
-     background:#ff4d6d;
-     color:#ffffff;
-     border-radius:20px;
-     text-decoration:none;
-     margin:16px auto;
-     max-width:720px;
-     font-weight:700;
-     text-align:center;
-     box-shadow:0 8px 16px rgba(255,77,109,0.25);
-   ">
-  ▶ Tap to play “Nuvvunte Naa Jathagaa” ❤️
-</a>
-
-<p class="note">▶ Tap play to listen</p>
-
     <div class="card">
       <p>
-        This little website is made just for you, <strong>Yeshu</strong> 🥰  
-        Because you deserve cute things… and because I love you A LOT.
+        I made this little page just for you, Yeshu — because you deserve all the cute things,
+        and because I love you so much.
       </p>
 
       <p>
-        Thank you for being my safe place, my smile on hard days,
-        and my favorite person always 😄
+        I notice everything you do for me: how you take care of me, cook for me, drive for me,
+        and help me with the smallest things without me even asking. It means more than I can say.
       </p>
 
       <p>
-        I choose you today, tomorrow, and always 💖
+        Even if my life had nothing else, having you by my side is enough. And I want you to know this:
+        I will support you in every way — in every step, every dream, every goal — until you get everything
+        you want from your life.
       </p>
+
+      <div class="song-title">Our Telugu love song 🎶</div>
+      <a class="song-btn" href="https://www.youtube.com/watch?v=Zc7SeDL-0uE">
+        ▶ Tap to play “Nuvvunte Naa Jathagaa” ❤️
+      </a>
+      <div class="note">If it opens inside an app, choose “Open in Safari/Chrome”.</div>
+
+      <button class="btn" type="button" id="surpriseBtn">Click Me 💌</button>
 
       <p class="signature">
         Forever yours,<br />
-        ❤️ <strong>Jyothi</strong>
+        <strong>❤️ Jyothi</strong>
       </p>
 
-      <button onclick="showLove()">Click Me Yeshu 💌</button>
-
-      <p class="ps">P.S. Nuvvu na life lo unna anduke antha bagundi 💞</p>
+      <p class="ps">P.S. You’re my favorite person — today and always 😘</p>
     </div>
-  </div>
+  </main>
 
   <script>
-    function showLove() {
-      alert("Surprise! 💝 Unlimited hugs, kisses, and a date with me 😘");
-    }
+    document.getElementById("surpriseBtn").addEventListener("click", function () {
+      alert("Surprise time! 💝 Unlimited hugs, kisses, and a date with me 😘");
+    });
   </script>
 </body>
 </html>
