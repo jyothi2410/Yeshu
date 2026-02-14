@@ -4,35 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yeshu ❤️ My Valentine</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffd6e8, #fff);
+      color: #444;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 40px 20px 60px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 40px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      color: #ff758f;
+      margin: 0 0 18px;
+    }
+
+    .heart {
+      font-size: 48px;
+      animation: pulse 1.4s infinite;
+      margin-bottom: 8px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+      100% { transform: scale(1); }
+    }
+
+    .song-title {
+      font-weight: 700;
+      margin: 18px 0 10px;
+    }
+
+    .video {
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      margin: 0 auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: 0;
+      display: block;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #777;
+      margin: 10px 0 0;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      margin-top: 22px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+      text-align: left;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 12px 0;
+    }
+
+    .signature {
+      margin-top: 14px;
+    }
+
+    button {
+      margin-top: 14px;
+      padding: 12px 22px;
+      font-size: 16px;
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 10px 18px rgba(255,77,109,0.25);
+    }
+
+    button:hover {
+      background: #e63956;
+    }
+
+    .ps {
+      font-size: 14px;
+      margin-top: 15px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
-  <main class="container">
-    <div class="heart" aria-hidden="true">💗💗</div>
+  <div class="container">
+    <div class="heart">💗💗</div>
     <h1>Hello Yeshu!</h1>
     <h2>Happy Valentine’s Day 💕</h2>
 
-    <section class="song-card" aria-label="Song">
-      <p class="song-title">Our Telugu love song 🎶</p>
+    <div class="song-title">Our Telugu love song 🎶</div>
 
-      <!-- Reliable approach: show player, user taps play -->
-      <div class="player-wrap">
-        <iframe
-          id="ytPlayer"
-          src="https://www.youtube.com/embed/6ZrN8j2z5rE"
-          title="Telugu Love Song"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
+    <!-- If you want a different song, replace ONLY the video ID after /embed/ -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/Bm1h2lGmSuw"
+        title="Telugu Love Song"
+        allow="accelerometer; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-      <p class="note">▶️ Tap play to listen (phones block autoplay with sound).</p>
-    </section>
+    <div class="note">▶ Tap play to listen (phones block autoplay).</div>
 
-    <section class="card">
+    <div class="card">
       <p>
-        This little website is made just for you, <strong>Yeshu</strong> 🥰
+        This little website is made just for you, <strong>Yeshu</strong> 🥰  
         Because you deserve cute things… and because I love you A LOT.
       </p>
 
@@ -45,19 +146,21 @@
         I choose you today, tomorrow, and always 💖
       </p>
 
-      <p class="sig">
+      <p class="signature">
         Forever yours,<br />
-        <strong>❤️ Jyothi</strong>
+        ❤️ <strong>Jyothi</strong>
       </p>
 
-      <button class="surprise-btn" id="surpriseBtn" type="button">
-        Click Me Yeshu 💌
-      </button>
+      <button onclick="showLove()">Click Me Yeshu 💌</button>
 
-      <p class="tiny">P.S. Nuvvu na life lo unna anduke antha bagundi 💞</p>
-    </section>
-  </main>
+      <p class="ps">P.S. Nuvvu na life lo unna anduke antha bagundi 💞</p>
+    </div>
+  </div>
 
-  <script src="js/app.js"></script>
+  <script>
+    function showLove() {
+      alert("Surprise! 💝 Unlimited hugs, kisses, and a date with me 😘");
+    }
+  </script>
 </body>
 </html>
